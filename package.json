@@ -1,0 +1,30 @@
+{
+  "name": "andelamorerecipes",
+  "version": "1.0.0",
+  "description": "Andela MoreRecipes Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muveefreak/andelaMoreRecipes.git"
+  },
+  "author": "Akhere Ihenyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muveefreak/andelaMoreRecipes/issues"
+  },
+  "homepage": "https://github.com/Muveefreak/andelaMoreRecipes#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
