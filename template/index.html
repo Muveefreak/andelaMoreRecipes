@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">moreRECIPE</a>
-            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class = "navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.htmls">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="catalog.html">Catalog</a>
@@ -32,14 +32,43 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
+                    <li class="nav-item p-1">
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal">Log In</button>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="btn btn-danger btn-sm" href="#">Add Recipe</a>
+                    </li>
                 </ul>
-
             </div>
-
         </div>
-
     </nav>
+    <!--LOGIN MODAL-->
+    <div class = "modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">User Login</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--HOME SECTION-->
     <header id="home-section">
@@ -52,37 +81,30 @@
                             <div class="d-flex flex-row">
                                 <div class="p-4 align-self-start">
                                     <i class="fa fa-check"></i>
-
                                 </div>
-                                <div class="p-4 align-self-end">
+                                <div class="p-3 align-self-end">
                                     Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sollicitudin, diam
                                     libero fermentum dui, in cursus nisi risus sed orci.
                                 </div>
-
                             </div>
                             <div class="d-flex flex-row">
                                 <div class="p-4 align-self-start">
                                     <i class="fa fa-check"></i>
-
                                 </div>
-                                <div class="p-4 align-self-end">
+                                <div class="p-3 align-self-end">
                                     Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sollicitudin, diam
                                     libero fermentum dui, in cursus nisi risus sed orci.
                                 </div>
-
                             </div>
                             <div class="d-flex flex-row">
                                 <div class="p-4 align-self-start">
                                     <i class="fa fa-check"></i>
-
                                 </div>
-                                <div class="p-4 align-self-end">
+                                <div class="p-3 align-self-end">
                                     Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sollicitudin, diam
                                     libero fermentum dui, in cursus nisi risus sed orci.
                                 </div>
-
                             </div>
-
                         </div>
                         <div class="col-md-4">
                             <div class="card bg-primary card-form text-center">
@@ -102,21 +124,15 @@
                                         <div class="form-group">
                                             <input type="password" name="password2" class="form-control form-control-lg" placeholder="Confirm Password">
                                         </div>
-                                        <input type="submit" class="btn btn-outline-secondary btn-block" value="Submit">
+                                        <input type="submit" class="btn btn-outline-secondary btn-block" value="Submit"><hr>
+                                        <button class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#loginModal">Log In</button>
                                     </form>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </header>
 
@@ -129,25 +145,20 @@
                     <h3>Let's Cook</h3>
                     <p>Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante. Mauris ultricies diam augue, vitae
                         ullamcorper magna auctor sed</p>
-
                 </div>
                 <div class="col-md-4 mb-4 text-center">
                     <i class="fa fa-cog mb-2"></i>
                     <h3>Let's Cook</h3>
                     <p>Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante. Mauris ultricies diam augue, vitae
                         ullamcorper magna auctor sed</p>
-
                 </div>
                 <div class="col-md-4 mb-4 text-center">
                     <i class="fa fa-cog mb-2"></i>
                     <h3>Let's Cook</h3>
                     <p>Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante. Mauris ultricies diam augue, vitae
                         ullamcorper magna auctor sed</p>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -158,70 +169,51 @@
                 <div class="col">
                     <div class="container pt-5">
                         <h1>View our catalog of cookbooks and recipes</h1>
-                        <p>Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante.ante. Mauris ultricies diam augue, vitae ullamcorper.</p>
-                        
+                        <p>Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante.ante. Mauris ultricies diam
+                            augue, vitae ullamcorper.</p>
                     </div>
-                    
                 </div>
-                
             </div>
-            
         </div>
-        
     </section>
 
     <!--INFO SECTION-->
     <section id="info" class="py-5 paper-bg">
         <div class="container">
             <div class="row">
-                
                 <div class="col-md-6">
-                    <img src="img/bg7.jpg" alt="" class="img-fluid mb-3" >
-                    
+                    <img src="img/bg7.jpg" alt="" class="img-fluid mb-3">
+
                 </div>
                 <div class="col-md-6">
                     <h3>What you need to know</h3>
                     <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sol
-                                </div>
-
-                            </div>
-                            <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin 
-                                </div>
-
-                            </div>
-                            <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin 
-                                </div>
-
-                            </div>
-                    <!--<p>
-                      uisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante.ante. Mauris ultricies diam augue, vitae ullamcorper.
-                    </p>
-                    <a href="" class="btn btn-outline-danger btn-lg">LEARN MORE</a>-->
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="p-3 align-self-end">
+                            Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sol
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="p-3 align-self-end">
+                            Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="p-3 align-self-end">
+                            Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin
+                        </div>
+                    </div>
                 </div>
-
-                
             </div>
-            
         </div>
-        
     </section>
 
     <!--NEWSLETTER SECTION-->
@@ -236,17 +228,11 @@
                         <input type="text" name="" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter a name">
                         <label class="sr-only" for="email">Email</label>
                         <input type="text" name="" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter email">
-
                         <button type="submit" class="btn btn-primary">Submit</button>
-                        
                     </form>
-                    
                 </div>
-                
             </div>
-            
         </div>
-        
     </section>
 
     <!--FOOTER SECTION-->
@@ -255,13 +241,9 @@
             <div class="row">
                 <div class="col">
                     <p>Copyright 2017 &copy; moreRecipe. All Rights Reserved.</p>
-                    
                 </div>
-                
             </div>
-            
         </div>
-        
     </footer>
 
 

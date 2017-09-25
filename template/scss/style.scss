@@ -119,11 +119,8 @@ body {
     }
     &.catalog-page {
         height: 300px;
+    }
 }
-
-}
-
-
 
 #icon-box {
     .fa {
@@ -136,35 +133,42 @@ body {
 }
 
 //Catalog Page
-#page-header{
-    &.catalog-page{
-    .add-on .input-group-btn > .btn {
-  border-left-width:0;left:-2px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+#page-header {
+    &.catalog-page {
+        .add-on .input-group-btn>.btn {
+            border-left-width: 0;
+            left: -2px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .add-on .form-control:focus {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            border-color: #cccccc;
+        }
+        .form-control {
+            width: 20%
+        }
+    }
 }
-/* stop the glowing blue shadow */
-.add-on .form-control:focus {
- box-shadow:none;
- -webkit-box-shadow:none; 
- border-color:#cccccc; 
-}
-.form-control{width:20%}
 
-}
-}
 // CATALOG STYLING
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .card-columns {
         column-count: 4;
     }
 }
 
+@media (max-width: 767px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
 @media (min-width: 576px) {
-    .catalog-single{
+    .catalog-single {
         display: inline;
     }
-
 }
 
 @media(max-width:576px) {
