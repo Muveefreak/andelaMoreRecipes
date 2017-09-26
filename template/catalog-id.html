@@ -20,10 +20,10 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="catalog.html">Catalog</a>
                     </li>
                     <li class="nav-item">
@@ -36,7 +36,7 @@
                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal">Log In</button>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="btn btn-danger btn-sm" href="#">Add Recipe</a>
+                        <a class="btn btn-danger btn-sm" href="add-recipe.html">Add Recipe</a>
                     </li>
                 </ul>
             </div>
@@ -44,29 +44,31 @@
     </nav>
 
     <!--LOGIN MODAL-->
-    <div class = "modal" id="loginModal">
+    <div class="modal" id="loginModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="myModalLabel">User Login</h5>
                     <button class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form name="login-user" action="/profile.html" onsubmit="validateModalForm" method="get">
+                    <div class="modal-body">
+
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" placeholder="Username" class="form-control">
+                            <input name "username" type="text" placeholder="Username" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" placeholder="Password" class="form-control">
+                            <input name="password" type="password" placeholder="Password" class="form-control">
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button class="btn btn-primary">Login</button>
-                </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -79,71 +81,70 @@
                     <h1>Recipe Name</h1>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
-
             </div>
-
         </div>
-
     </header>
 
-    <!--SEARCH SECTION  -->
-    <section id="search-recipe">
+    <!--RECIPE INFO SECTION  -->
+    <section id="recipe-info">
         <div class="container p-5">
             <h3 class="py-4">Recipe Name</h3>
-                    <div class="card-group">
-                        <div class="card col-md-3 text-center">
-                            <img src="img/recipe1.jpeg" alt="" class="card-img-top img-fluid">
-                            <div class="card-body">
-                                <h4 class="card-title">Egusi Soup</h4>
-                                <small class="text-muted">Olusegun Jonathan</small>
+            <div class="card-group">
+                <div class="card col-md-3 text-center">
+                    <img src="img/recipe1.jpeg" alt="" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h4 class="card-title">Egusi Soup</h4>
+                        <small class="text-muted">Olusegun Jonathan</small>
+                    </div>
+                </div>
+                <div class="card col-md-9">
+                    <div class="card-body">
+                        <p class="card-text">Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante. Mauris ultricies diam augue,
+                            vitae ullamcorper magna auctor sed. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Cras tincidunt dignissim mi, et ornare orci fringilla id.
+                            Sed interdum eros velit, vel suscipit dui lobortis vitae. Donec feugiat lobortis nulla vitae
+                            aliquet. Vestibulum varius lectus leo, commodo ornare tellus tristique sit amet. Sed gravida
+                            nisl turpis, vel suscipit lorem maximus pretium. Suspendisse potenti. Nam egestas fringilla ipsum
+                            nec iaculis. Vestibulum ut sagittis velit. Vestibulum efficitur luctus felis, vulputate </p>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"></i>
+
                             </div>
+                            <div class="p-4 align-self-end">
+                                Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sol
+                            </div>
+
                         </div>
-                    
-                        <div class="card col-md-9">
-                            <div class="card-body">
-                                <p class="card-text">Quisque a felis ex. Integer eu volutpat lacus. Aliquam a maximus ante. Mauris ultricies diam
-                                    augue, vitae ullamcorper magna auctor sed. Pellentesque habitant morbi tristique senectus
-                                    et netus et malesuada fames ac turpis egestas. Cras tincidunt dignissim mi, et ornare
-                                    orci fringilla id. Sed interdum eros velit, vel suscipit dui lobortis vitae. Donec feugiat
-                                    lobortis nulla vitae aliquet. Vestibulum varius lectus leo, commodo ornare tellus tristique
-                                    sit amet. Sed gravida nisl turpis, vel suscipit lorem maximus pretium. Suspendisse potenti.
-                                    Nam egestas fringilla ipsum nec iaculis. Vestibulum ut sagittis velit. Vestibulum efficitur
-                                    luctus felis, vulputate </p>
-                                    <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin sol
-                                </div>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"></i>
 
                             </div>
-                            <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin 
-                                </div>
-
-                            </div>
-                            <div class="d-flex flex-row">
-                                <div class="p-4 align-self-start">
-                                    <i class="fa fa-check"></i>
-
-                                </div>
-                                <div class="p-4 align-self-end">
-                                    Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin 
-                                </div>
-
+                            <div class="p-4 align-self-end">
+                                Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin
                             </div>
 
-                            </div>
                         </div>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"></i>
+
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Vivamus sagittis elementum dolor sit amet vestibulum. Proin sollicitudin, nulla tincidunt sollicitudin
+                            </div>
+
                         </div>
+                        <button type="button" id="testBtn" class="btn btn-success fa fa-thumbs-o-up" data-loading-text=" ... ">
+    4</button>
+                        <button type="button" id="testBtnDown" class="btn btn-success fa fa-thumbs-o-down" data-loading-text=" ... ">
+    4</button>
+
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
 
     <!--FOOTER SECTION-->
@@ -152,19 +153,16 @@
             <div class="row">
                 <div class="col">
                     <p>Copyright 2017 &copy; moreRecipe. All Rights Reserved.</p>
-
                 </div>
-
             </div>
-
         </div>
-
     </footer>
 
-
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

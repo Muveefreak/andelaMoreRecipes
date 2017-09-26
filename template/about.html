@@ -20,13 +20,13 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="catalog.html">Catalog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
@@ -36,7 +36,7 @@
                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal">Log In</button>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="btn btn-danger btn-sm" href="#">Add Recipe</a>
+                        <a class="btn btn-danger btn-sm" href="add-recipe.html">Add Recipe</a>
                     </li>
                 </ul>
             </div>
@@ -51,22 +51,24 @@
                     <h5 class="modal-title" id="myModalLabel">User Login</h5>
                     <button class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form name="login-user" action="/profile.html" onsubmit="validateModalForm" method="get">
+                    <div class="modal-body">
+
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" placeholder="Username" class="form-control">
+                            <input name "username" type="text" placeholder="Username" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" placeholder="Password" class="form-control">
+                            <input name="password" type="password" placeholder="Password" class="form-control">
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button class="btn btn-primary">Login</button>
-                </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

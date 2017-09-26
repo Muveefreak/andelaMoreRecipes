@@ -90,6 +90,8 @@ body {
     color: #008ed6; }
   #page-header.catalog-page {
     height: 300px; }
+  #page-header.register-success {
+    padding-top: 100px; }
 
 #icon-box .fa {
   font-size: 40px; }

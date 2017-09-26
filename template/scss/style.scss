@@ -120,6 +120,9 @@ body {
     &.catalog-page {
         height: 300px;
     }
+    &.register-success{
+        padding-top:100px;
+    }
 }
 
 #icon-box {
@@ -151,6 +154,7 @@ body {
         }
     }
 }
+
 
 // CATALOG STYLING
 @media (min-width: 768px) {

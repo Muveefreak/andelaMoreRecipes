@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Andela MoreRecipe</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">moreRECIPE</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal">Log In</button>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="btn btn-danger btn-sm" href="add-recipe.html">Add Recipe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--LOGIN MODAL-->
+    <div class = "modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">User Login</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <form name="login-user" action="/profile.html" onsubmit="validateModalForm" method="get">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input name "username" type="text" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input name="password" type="password" placeholder="Password" class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--HEADER SECTION-->
+    <header id="page-header" class="register-success">
+        <div class="container">
+            <div class="row">
+                <div class="col ml-auto-ml-3 text-center">
+                    <h1>Success</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--REGISTER SUCCESS PAGE-->
+    <section id="success-register">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col">
+                    <h3>YOU HAVE SUCCESSFULLY REGISTERED</h3>
+                    <p>Click the button below to return to home page</p>
+                    <a href="index.html" class="btn btn-primary"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to homepage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--FOOTER SECTION-->
+    <footer id="main-footer" class="text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2017 &copy; moreRecipe. All Rights Reserved.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
