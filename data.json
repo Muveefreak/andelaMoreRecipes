@@ -1,0 +1,31 @@
+{
+  "recipes":[
+    {
+      "id": 1,
+      "name": "Banga Soup",
+      "description": "Beautiful african delicacy"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Pie",
+      "description": "Oyibo things"
+    }
+  ],
+  "reviews":[
+    {
+      "id": 1,
+      "review1": "Test review 1",
+      "recipeId": 1
+    },
+    {
+      "id": 2,
+      "review2": "Test review 2",
+      "recipeId": 2
+    },
+    {
+      "id": 3,
+      "review3": "Test review 3",
+      "recipeId": 2
+    }
+  ]
+}
